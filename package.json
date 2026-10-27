@@ -1,0 +1,16 @@
+{
+  "name": "webpack-hmr-retained-module-dependency-repro",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A cached self-accepted module gains an unloaded synchronous dependency",
+  "scripts": {
+    "test": "node reproduce.cjs",
+    "test:control": "node reproduce.cjs --control"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "webpack": "5.112.2"
+  }
+}

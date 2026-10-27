@@ -1,0 +1,231 @@
+{
+  "webpack": "5.112.2",
+  "node": "v22.23.4",
+  "control": false,
+  "detached": {
+    "before": "4bb9ac03809e06f6c48f",
+    "after": "2110622637afdcab49f1",
+    "updated": [
+      "./index.js"
+    ],
+    "status": "idle"
+  },
+  "edited": {
+    "before": "2110622637afdcab49f1",
+    "error": "Cannot find module './n.js'",
+    "status": "fail"
+  },
+  "expectedStatus": "idle",
+  "builds": [
+    {
+      "label": "initial",
+      "hash": "4bb9ac03809e06f6c48f",
+      "entries": {
+        "main": [
+          "shared.js",
+          "main.js"
+        ]
+      },
+      "chunks": [
+        {
+          "id": "main",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "./index.js"
+          ]
+        },
+        {
+          "id": "other",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "./other.js"
+          ]
+        },
+        {
+          "id": "extra",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "./n.js"
+          ]
+        },
+        {
+          "id": "shared",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "./dep.js"
+          ]
+        }
+      ],
+      "manifests": {}
+    },
+    {
+      "label": "drop entry's synchronous dep import",
+      "hash": "2110622637afdcab49f1",
+      "entries": {
+        "main": [
+          "main.js",
+          "main.4bb9ac03809e06f6c48f.hot-update.js"
+        ]
+      },
+      "chunks": [
+        {
+          "id": "main",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "./index.js"
+          ]
+        },
+        {
+          "id": "other",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "./other.js"
+          ]
+        },
+        {
+          "id": "extra",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "./n.js"
+          ]
+        },
+        {
+          "id": "shared",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "./dep.js"
+          ]
+        }
+      ],
+      "manifests": {
+        "main.4bb9ac03809e06f6c48f.hot-update.json": {
+          "c": [
+            "main"
+          ],
+          "r": [],
+          "m": [],
+          "css": {
+            "r": [
+              "main"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "cached dep starts requiring n",
+      "hash": "9447d11aefa1f45e2ed0",
+      "entries": {
+        "main": [
+          "main.js",
+          "main.2110622637afdcab49f1.hot-update.js"
+        ]
+      },
+      "chunks": [
+        {
+          "id": "main",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "./index.js"
+          ]
+        },
+        {
+          "id": "other",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "./other.js"
+          ]
+        },
+        {
+          "id": "extra",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "./n.js"
+          ]
+        },
+        {
+          "id": "shared",
+          "runtime": [
+            "main"
+          ],
+          "modules": [
+            "./dep.js"
+          ]
+        }
+      ],
+      "manifests": {
+        "main.2110622637afdcab49f1.hot-update.json": {
+          "c": [
+            "main",
+            "shared"
+          ],
+          "r": [],
+          "m": [],
+          "css": {
+            "r": [
+              "main",
+              "shared"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
